@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `My Site`,
+    title: `Learn w/ Leroy.`,
     author: {
-      name: `Leroy`,
-      summary: ``,
+      name: `Leroy Wan`,
+      summary: `Programmer, designer, product person.`,
     },
     description: `The description of this site`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,

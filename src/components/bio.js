@@ -53,7 +53,7 @@ const Bio = () => {
       )}
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong>. {author?.summary || null}
+          Written by <strong>{author.name}</strong>.<br></br><span><i>{author?.summary || null}</i></span>
         </p>
       )}
     </div>
