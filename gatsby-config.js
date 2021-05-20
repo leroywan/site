@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Learn w/ Leroy.`,
+    title: `Leroy Wan.`,
     author: {
       name: `Leroy Wan`,
-      summary: `Programmer, designer, product person.`,
+      summary: `Developer & web designer.`,
     },
     description: `The description of this site`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
@@ -17,6 +17,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/projects`,
+        name: `projects`,
       },
     },
     {
@@ -74,4 +81,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
