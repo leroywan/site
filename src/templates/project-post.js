@@ -11,20 +11,71 @@ const BlogPostTemplate = ({ data, location }) => {
   const { previous, next } = data;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout
+      location={location}
+      title={siteTitle}
+      template="projects"
+      themeColor={post.frontmatter.theme}
+    >
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className="blog-post"
+        className="project-post"
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+        <header className="hero-container">
+          <div className="hero">
+            <div className="hero-content">
+              <p className="project__subtitle">Web Development</p>
+              <h2 className="project__tagline">
+                an overhauled look for a new line-up of products
+              </h2>
+              {/* <h1 itemProp="headline">{post.frontmatter.title}</h1> */}
+              <p className="hero-content__tags">
+                Design, Development, UX, QA, Integration
+              </p>
+              <p className="hero-content__date">{post.frontmatter.date}</p>
+            </div>
+            <div className="hero-image">
+              <div className="hero-image-spacer"></div>
+              <div className="hero-image-bg"></div>
+            </div>
+          </div>
         </header>
+        <section className="overview-wrapper">
+          <div className="overview">
+            <div className="overview__heading">
+              <p className="project__subtitle">Overview</p>
+              <h2 className="project__tagline">
+                new line-up.<br></br>new design.
+              </h2>
+            </div>
+            <div className="overview__body">
+              <p className="project__p">
+                Coachella is a notorious cacophony of performances, selfies,
+                installations, and general madness — and yet we went on location
+                to get people’s attention. In anticipation of Childish Gambino’s
+                new adidas shoe line and forthcoming performance, we sent
+                invites to be the first to wear the shoes via AirDrop. What
+                happened next, no one saw coming.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="splash-image-wrapper">
+          <div className="splash-image"></div>
+        </section>
+        <section className="project-results-wrapper">
+          <div className="project-results">
+            <p className="project__subtitle">Results</p>
+            <p className="project__tagline">91% faster site speed</p>
+            <p className="project__tagline">A brand new payment portal</p>
+            <p className="project__tagline">A much prettier website</p>
+          </div>
+        </section>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
@@ -85,6 +136,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        theme
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
