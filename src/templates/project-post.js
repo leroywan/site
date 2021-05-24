@@ -73,7 +73,8 @@ const BlogPostTemplate = ({ data, location }) => {
               <div
                 className="hero-image-bg splash-image"
                 style={{
-                  backgroundImage: "url(https://picsum.photos/800/800)",
+                  backgroundImage:
+                    "url(https://leroywan.s3.us-east-2.amazonaws.com/holigos-banner.png",
                 }}
               ></div>
             </div>
@@ -85,7 +86,7 @@ const BlogPostTemplate = ({ data, location }) => {
               <p className="project__subtitle">Overview</p>
               <h2 className="project__tagline">
                 {post.frontmatter.overview_title.map((line) => (
-                  <div>{line}</div>
+                  <div>{parseAccentText(line)}</div>
                 ))}
               </h2>
             </div>
@@ -97,16 +98,11 @@ const BlogPostTemplate = ({ data, location }) => {
         <section className="splash-image-wrapper">
           <div
             className="splash-image"
-            style={{ backgroundImage: "url(https://picsum.photos/800/800)" }}
+            style={{
+              backgroundImage:
+                "url(https://leroywan.s3.us-east-2.amazonaws.com/holigos-banner.png",
+            }}
           ></div>
-        </section>
-        <section className="project-results-wrapper">
-          <div className="project-results">
-            <p className="project__subtitle">Results</p>
-            {post.frontmatter.results.map((text) => (
-              <p className="project__tagline">{text}</p>
-            ))}
-          </div>
         </section>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -174,7 +170,6 @@ export const pageQuery = graphql`
         tags
         overview_title
         overview
-        results
         colors
       }
     }

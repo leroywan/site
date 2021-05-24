@@ -5,10 +5,9 @@ blog: "projects"
 subtitle: "web development"
 tagline: "an <overhauled> look for a new line-up of products"
 tags: ["Design", "Development", "UX", "QA", "Integration"]
-overview_title: ["New lineup.", "New design."]
+overview_title: ["<New lineup.>", "New design."]
 overview: "Coachella is a notorious cacophony of performances, selfies, installations, and general madness — and yet we went on location to get people’s attention. In anticipation of Childish Gambino’s new adidas shoe line and forthcoming performance, we sent invites to be the first to wear the shoes via AirDrop. What happened next, no one saw coming."
-results: ["91% faster site speed", "A brand new payment portal", "A much prettier website"]
-colors: ["#fff", "#f24538"]
+colors: ["#e5fdff", "#f24538"]
 ---
 
 <!-- Wow! I love blogging so much already.
