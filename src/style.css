@@ -262,6 +262,7 @@ a {
 }
 
 .global-wrapper--projects {
+  padding: 0;
   max-width: var(--maxWidth-full);
 }
 
@@ -271,6 +272,12 @@ a {
 
 .global-header {
   margin-bottom: var(--spacing-12);
+}
+
+.global-wrapper--projects .global-header {
+  z-index: 10000;
+  padding: var(--spacing-6);
+  position: absolute;
 }
 
 .main-heading {
@@ -358,6 +365,10 @@ a {
   --letter-spacing-subtitle: 4px;
 }
 
+.global-wrapper--projects .text--accented {
+  color: var(--color-theme-accent);
+}
+
 .project-post {
   font-family: var(--fontFamily-sans);
 }
@@ -373,6 +384,7 @@ a {
 }
 
 .hero-content {
+  padding: var(--spacing-6);
   position: absolute;
   width: 400px;
   top: 50%;
@@ -450,7 +462,10 @@ a {
 
 .splash-image {
   background-color: #faf2f1;
-  height: 460px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: var(--hero-height);
   width: 100%;
 }
 

@@ -10,12 +10,41 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const { previous, next } = data;
 
+  function parseAccentText(text) {
+    const accented = new Set();
+    const parsed = [];
+    let temp = "";
+    for (let i = 0; i < text.length; i++) {
+      let char = text[i];
+      if (char == "<") {
+        parsed.push(temp);
+        temp = "";
+      } else if (char == ">") {
+        parsed.push(temp);
+        accented.add(temp);
+        temp = "";
+      } else {
+        temp += char;
+      }
+    }
+    if (temp != "") {
+      parsed.push(temp);
+    }
+    parsed.forEach((text, i) => {
+      if (accented.has(text)) {
+        parsed[i] = <span className="text--accented">{text}</span>;
+      }
+    });
+    return parsed;
+  }
+
   return (
     <Layout
       location={location}
       title={siteTitle}
       template="projects"
-      themeColor={post.frontmatter.theme}
+      themeColor={post.frontmatter.colors[0]}
+      themeAccent={post.frontmatter.colors[1]}
     >
       <SEO
         title={post.frontmatter.title}
@@ -29,19 +58,24 @@ const BlogPostTemplate = ({ data, location }) => {
         <header className="hero-container">
           <div className="hero">
             <div className="hero-content">
-              <p className="project__subtitle">Web Development</p>
+              <p className="project__subtitle">{post.frontmatter.subtitle}</p>
               <h2 className="project__tagline">
-                an overhauled look for a new line-up of products
+                {parseAccentText(post.frontmatter.tagline)}
               </h2>
               {/* <h1 itemProp="headline">{post.frontmatter.title}</h1> */}
               <p className="hero-content__tags">
-                Design, Development, UX, QA, Integration
+                {post.frontmatter.tags.join(", ")}
               </p>
               <p className="hero-content__date">{post.frontmatter.date}</p>
             </div>
             <div className="hero-image">
               <div className="hero-image-spacer"></div>
-              <div className="hero-image-bg"></div>
+              <div
+                className="hero-image-bg splash-image"
+                style={{
+                  backgroundImage: "url(https://picsum.photos/800/800)",
+                }}
+              ></div>
             </div>
           </div>
         </header>
@@ -50,30 +84,28 @@ const BlogPostTemplate = ({ data, location }) => {
             <div className="overview__heading">
               <p className="project__subtitle">Overview</p>
               <h2 className="project__tagline">
-                new line-up.<br></br>new design.
+                {post.frontmatter.overview_title.map((line) => (
+                  <div>{line}</div>
+                ))}
               </h2>
             </div>
             <div className="overview__body">
-              <p className="project__p">
-                Coachella is a notorious cacophony of performances, selfies,
-                installations, and general madness — and yet we went on location
-                to get people’s attention. In anticipation of Childish Gambino’s
-                new adidas shoe line and forthcoming performance, we sent
-                invites to be the first to wear the shoes via AirDrop. What
-                happened next, no one saw coming.
-              </p>
+              <p className="project__p">{post.frontmatter.overview}</p>
             </div>
           </div>
         </section>
         <section className="splash-image-wrapper">
-          <div className="splash-image"></div>
+          <div
+            className="splash-image"
+            style={{ backgroundImage: "url(https://picsum.photos/800/800)" }}
+          ></div>
         </section>
         <section className="project-results-wrapper">
           <div className="project-results">
             <p className="project__subtitle">Results</p>
-            <p className="project__tagline">91% faster site speed</p>
-            <p className="project__tagline">A brand new payment portal</p>
-            <p className="project__tagline">A much prettier website</p>
+            {post.frontmatter.results.map((text) => (
+              <p className="project__tagline">{text}</p>
+            ))}
           </div>
         </section>
         <section
@@ -137,6 +169,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         theme
+        subtitle
+        tagline
+        tags
+        overview_title
+        overview
+        results
+        colors
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

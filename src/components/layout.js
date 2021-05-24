@@ -1,7 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
 
-const Layout = ({ location, title, template, themeColor, children }) => {
+const Layout = ({
+  location,
+  title,
+  template,
+  themeColor,
+  themeAccent,
+  children,
+}) => {
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location.pathname === rootPath;
   let header;
@@ -26,7 +33,10 @@ const Layout = ({ location, title, template, themeColor, children }) => {
 
   return (
     <div
-      style={{ "--color-theme-bg": themeColor }}
+      style={{
+        "--color-theme-bg": themeColor,
+        "--color-theme-accent": themeAccent,
+      }}
       className={wrapperClass}
       data-is-root-path={isRootPath}
     >
