@@ -69,7 +69,6 @@ const BlogPostTemplate = ({ data, location }) => {
               <p className="hero-content__date">{post.frontmatter.date}</p>
             </div>
             <div className="hero-image">
-              <div className="hero-image-spacer"></div>
               <div
                 className="hero-image-bg splash-image"
                 style={{
@@ -166,7 +165,6 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
-        theme
         subtitle
         tagline
         tags
