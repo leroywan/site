@@ -5,7 +5,8 @@ const Layout = ({
   location,
   title,
   template,
-  themeColor,
+  themeColor1,
+  themeColor2,
   themeAccent,
   children,
 }) => {
@@ -34,7 +35,8 @@ const Layout = ({
   return (
     <div
       style={{
-        "--color-theme-bg": themeColor,
+        "--color-theme-bg-1": themeColor1,
+        "--color-theme-bg-2": themeColor2,
         "--color-theme-accent": themeAccent,
       }}
       className={wrapperClass}

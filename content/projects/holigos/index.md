@@ -7,8 +7,8 @@ tagline: "an <overhauled> look for a new line-up of products"
 tags: ["Design", "Development", "UX", "QA", "Integration"]
 overview_title: ["<New lineup.>", "New design."]
 overview: "I collaborated with the marketing team at Capgemini and built the e-commerce store for Holigos®, a dietary supplement that improves gut health."
-colors: ["#e5fdff", "#f24538"]
-images: ["https://leroywan.s3.us-east-2.amazonaws.com/holigos-banner.png", "https://leroywan.s3.us-east-2.amazonaws.com/holigos-banner.png"]
+colors: ["#e5fdff", "#fffbec", "#f24538"]
+images: ["https://leroywan.s3.us-east-2.amazonaws.com/holigos__screen.png", "https://leroywan.s3.us-east-2.amazonaws.com/holigos__screen.png"]
 ---
 
 # Hope you enjoy

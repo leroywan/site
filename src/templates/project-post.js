@@ -45,8 +45,9 @@ const BlogPostTemplate = ({ data, location }) => {
       location={location}
       title={siteTitle}
       template="projects"
-      themeColor={post.frontmatter.colors[0]}
-      themeAccent={post.frontmatter.colors[1]}
+      themeColor1={post.frontmatter.colors[0]}
+      themeColor2={post.frontmatter.colors[1]}
+      themeAccent={post.frontmatter.colors[2]}
     >
       <SEO
         title={post.frontmatter.title}
