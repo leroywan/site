@@ -104,10 +104,12 @@ const BlogPostTemplate = ({ data, location }) => {
             }}
           ></div>
         </section>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
+        <div className="blog-post global-wrapper">
+          <section
+            dangerouslySetInnerHTML={{ __html: post.html }}
+            itemProp="articleBody"
+          />
+        </div>
         <hr />
         <footer>
           <Bio />

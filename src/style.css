@@ -49,7 +49,7 @@
     "Noto Color Emoji";
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
-  --font-body: var(--fontFamily-serif);
+  --font-body: var(--fontFamily-sans);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
   --fontWeight-medium: 500;
@@ -57,7 +57,7 @@
   --fontWeight-bold: 700;
   --fontWeight-extrabold: 800;
   --fontWeight-black: 900;
-  --fontSize-root: 16px;
+  --fontSize-root: 18px;
   --lineHeight-none: 1;
   --lineHeight-tight: 1.1;
   --lineHeight-normal: 1.5;
@@ -71,7 +71,7 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --fontSize-8: 3.448rem;
+  --fontSize-8: 3.228rem;
   --color-primary: #005b99;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
@@ -184,6 +184,7 @@ p {
   --x-height-multiplier: 0.35;
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
   padding: var(--spacing-0);
+  font-size: var(--fontSize-2);
 }
 
 ul,
@@ -259,7 +260,6 @@ a {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
   padding: var(--spacing-10) var(--spacing-5);
-  background-color: var(--color-theme-bg);
 }
 
 .global-wrapper--projects {
@@ -382,15 +382,15 @@ a {
   position: relative;
   height: var(--hero-height);
   width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-theme-bg);
+  flex-direction: column;
 }
 
 .hero-content {
-  padding: var(--spacing-6);
-  position: absolute;
-  width: 460px;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+  padding: 180px var(--spacing-6);
+  flex-basis: 460px;
 }
 
 .project__subtitle {
@@ -402,7 +402,7 @@ a {
 }
 
 .project__tagline {
-  font-size: var(--fontSize-8);
+  font-size: var(--fontSize-7);
   margin-top: 0;
   margin-bottom: var(--spacing-4);
 }
@@ -424,11 +424,7 @@ a {
 .hero-image {
   width: 100%;
   height: 100%;
-  display: flex;
-}
-
-.hero-image-spacer {
-  width: 460px;
+  flex: 1;
 }
 
 .hero-image-bg {
@@ -472,6 +468,14 @@ a {
 }
 
 @media screen and (min-width: 840px) {
+  .hero {
+    flex-direction: row;
+  }
+
+  .hero-content {
+    min-height: 0;
+  }
+
   .overview {
     flex-direction: row;
   }
