@@ -37,6 +37,8 @@ const BlogPostTemplate = ({ data, location }) => {
     });
     return parsed;
   }
+  const image1 = `url(${post.frontmatter.images[0]})`;
+  const image2 = `url(${post.frontmatter.images[1]})`;
 
   return (
     <Layout
@@ -58,7 +60,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <header className="hero-container">
           <div className="hero">
             <div className="hero-content">
-              <p className="project__subtitle">{post.frontmatter.subtitle}</p>
+              <p className="project__subtitle">{post.frontmatter.title}</p>
               <h2 className="project__tagline">
                 {parseAccentText(post.frontmatter.tagline)}
               </h2>
@@ -72,8 +74,7 @@ const BlogPostTemplate = ({ data, location }) => {
               <div
                 className="hero-image-bg splash-image"
                 style={{
-                  backgroundImage:
-                    "url(https://leroywan.s3.us-east-2.amazonaws.com/holigos-banner.png",
+                  backgroundImage: image1,
                 }}
               ></div>
             </div>
@@ -98,8 +99,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <div
             className="splash-image"
             style={{
-              backgroundImage:
-                "url(https://leroywan.s3.us-east-2.amazonaws.com/holigos-banner.png",
+              backgroundImage: image2,
             }}
           ></div>
         </section>
@@ -171,6 +171,7 @@ export const pageQuery = graphql`
         overview_title
         overview
         colors
+        images
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

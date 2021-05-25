@@ -363,7 +363,7 @@ a {
 
 .global-wrapper--projects {
   --hero-height: 720px;
-  --letter-spacing-subtitle: 4px;
+  --letter-spacing-subtitle: 2px;
 }
 
 .global-wrapper--projects .text--accented {
