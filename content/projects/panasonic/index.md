@@ -2,7 +2,7 @@
 title: Panasonic
 post_order: 10
 date: "2015-05-06T23:46:37.121Z"
-excerpt: "Sample excerpt"
+excerpt: "I built a multi-language micro-site with i18n support as a part of Panasonic's campaign to target the Asian-Canadian demographic."
 blog: "projects"
 subtitle: "web development"
 tagline: "presenting <luxury> to a <new> type of audience"

@@ -10,7 +10,7 @@ tags: ["Design", "Development", "UX", "QA", "Integration"]
 overview_title: ["User Research", "<Prototyping.>", "UI Design.", "<App Development.>", "Deployment."]
 overview: "I designed and developed Local Bite from an idea to a production-grade MVP used with a local farming cooperative. Local Bite is an e-commerce platform and marketplace that enables farmers to sell their produce online and manage order pickups."
 colors: ["#fff7ff", "#fffbf1", "#630762"]
-images: ["https://leroywan.s3.us-east-2.amazonaws.com/localbite__banner.png", "https://leroywan.s3.us-east-2.amazonaws.com/holigos-banner.png"]
+images: ["https://leroywan.s3.us-east-2.amazonaws.com/localbite__banner.png", "https://leroywan.s3.us-east-2.amazonaws.com/localbite__banner.png"]
 ---
 ## User Research & Rapid Prototyping
 The prototypes you see below were all designed and developed within a day. 4 prototypes were created in total and tested with users during 5 different a 1-hour study to validate any assumptions that were made. The learnings made from the 20 different studies were compiled to develop the first version of Local Bite.

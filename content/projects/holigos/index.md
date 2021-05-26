@@ -1,8 +1,8 @@
 ---
-title: Holigos
-post_order: 10
+title: Holigos®
+post_order: 1
 date: "2015-05-06T23:46:37.121Z"
-excerpt: "Sample excerpt"
+excerpt: "I redesigned and developed Holigos®' website to support subscription payments for their new line of dietary supplement."
 blog: "projects"
 subtitle: "web development"
 tagline: "<rebuilding> the site of a dietary supplement brand"

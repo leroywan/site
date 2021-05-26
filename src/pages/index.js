@@ -61,6 +61,11 @@ const BlogIndex = ({ data, location }) => {
                     }}
                     itemProp="description"
                   />
+                  <div style={{ textAlign: "right" }}>
+                    <Link to={post.fields.slug}>
+                      <small>continue reading →</small>
+                    </Link>
+                  </div>
                 </section>
               </article>
             </li>

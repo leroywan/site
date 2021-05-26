@@ -1,13 +1,13 @@
 ---
 title: Dyson Supersonic
-post_order: 10
+post_order: 1
 date: "2015-05-06T23:46:37.121Z"
-excerpt: "Sample excerpt"
+excerpt: "I built a multi-language micro-site with i18n support as a part of Dyson Canada's campaign to target the Asian-Canadian demographic during Chinese New Year for their red-coloured hairdryer."
 blog: "projects"
 subtitle: "web development"
 tagline: "a <hairdryer> to bring prosperity this <chinese new year>"
 tags: ["Design", "Development", "UX", "QA", "Integration"]
-overview_title: ["a <multi-language>", "<micro-site> designed", "to showcase", "<luxury> to a", "<chinese> audience"]
+overview_title: ["a <multi-language>", "<micro-site> designed", "to showcase", "<luxury> to <chinese>", " audiences"]
 overview: "Chinese New Year is the most important holiday for Chinese people, it's a holiday of family, food, and gifts. One of the main consumers of Dyson products is their Chinese audience, and thus, they created the limited Chinese New Year edition of their famous blade-less Supersonic hairdryer. We created a micro-site as a part of their campaign to drive traffic to their main website where customers can buy the product. As a $400 product, we needed to create a very simplistic and elegant site that demonstrates exactly why this product can command such a high price point. The micro-site's main objective is to showcase each feature and innovative qualities of this product while playing to the campaign's theme of Chinese New Year."
 colors: ["#fff8e4", "#ffffff", "#cc0000"]
 images: ["https://leroywan.s3.us-east-2.amazonaws.com/dyson__screen.png", "https://leroywan.s3.us-east-2.amazonaws.com/dyson__screen.png"]

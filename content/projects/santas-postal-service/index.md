@@ -2,7 +2,7 @@
 title: Santa's Postal Service
 post_order: 100
 date: "2015-05-06T23:46:37.121Z"
-excerpt: "Sample excerpt"
+excerpt: "I built a seasonal online-store by automating the production of personalized printed letters to handle high order volume as a one-man-show — over 2500 happy children have received their custom letter from Santa Claus last Christmas season."
 blog: "projects"
 subtitle: "web development"
 tagline: "the <magic> of <customization>, and christmas."
