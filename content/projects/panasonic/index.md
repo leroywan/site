@@ -1,6 +1,8 @@
 ---
 title: Panasonic
+post_order: 10
 date: "2015-05-06T23:46:37.121Z"
+excerpt: "Sample excerpt"
 blog: "projects"
 subtitle: "web development"
 tagline: "presenting <luxury> to a <new> type of audience"

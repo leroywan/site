@@ -1,6 +1,8 @@
 ---
 title: Santa's Postal Service
+post_order: 100
 date: "2015-05-06T23:46:37.121Z"
+excerpt: "Sample excerpt"
 blog: "projects"
 subtitle: "web development"
 tagline: "the <magic> of <customization>, and christmas."

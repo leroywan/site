@@ -1,6 +1,8 @@
 ---
 title: Canam Systems
+post_order: 1
 date: "2015-05-06T23:46:37.121Z"
+excerpt: "Sample excerpt"
 blog: "projects"
 subtitle: "web development"
 tagline: "taking a site from <2003> to <2020>"

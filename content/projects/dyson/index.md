@@ -1,6 +1,8 @@
 ---
 title: Dyson Supersonic
+post_order: 10
 date: "2015-05-06T23:46:37.121Z"
+excerpt: "Sample excerpt"
 blog: "projects"
 subtitle: "web development"
 tagline: "a <hairdryer> to bring prosperity this <chinese new year>"

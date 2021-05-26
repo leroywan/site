@@ -72,7 +72,7 @@
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
   --fontSize-8: 3.228rem;
-  --color-primary: #005b99;
+  --color-primary: #2e2e2e;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
@@ -268,7 +268,7 @@ a {
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
-  margin-bottom: var(--spacing-20);
+  margin-bottom: var(--spacing-8);
 }
 
 .global-header {
@@ -286,9 +286,16 @@ a {
   margin: 0;
 }
 
+.post-list-image {
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+  margin-bottom: var(--spacing-6);
+}
+
 .post-list-item {
   margin-bottom: var(--spacing-8);
-  margin-top: var(--spacing-8);
+  margin-top: var(--spacing-12);
 }
 
 .post-list-item p {
@@ -315,7 +322,6 @@ a {
 
 .bio {
   display: flex;
-  margin-bottom: var(--spacing-16);
 }
 
 .bio p {
@@ -508,6 +514,14 @@ a {
   font-size: var(--fontSize-4);
   color: var(--color-text);
   text-decoration: none;
+}
+
+.project-tags {
+  display: inline-block;
+  padding: var(--spacing-1) var(--spacing-2);
+  border: 1px solid black;
+  margin-right: var(--spacing-2);
+  margin-bottom: var(--spacing-2);
 }
 
 @media screen and (min-width: 840px) {

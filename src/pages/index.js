@@ -30,6 +30,7 @@ const BlogIndex = ({ data, location }) => {
       <ol style={{ listStyle: `none` }}>
         {posts.map((post) => {
           const title = post.frontmatter.title || post.fields.slug;
+          const imageUrl = `url(${post.frontmatter.images[0]})`;
           return (
             <li key={post.fields.slug}>
               <article
@@ -37,18 +38,26 @@ const BlogIndex = ({ data, location }) => {
                 itemScope
                 itemType="http://schema.org/Article"
               >
+                <div
+                  className="post-list-image"
+                  style={{ backgroundImage: imageUrl }}
+                ></div>
                 <header>
                   <h2>
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
+                  {post.frontmatter.tags.map((item, i) => (
+                    <small className="project-tags" key={`${i}-${item}`}>
+                      {item}
+                    </small>
+                  ))}
                 </header>
                 <section>
                   <p
                     dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
+                      __html: post.frontmatter.excerpt || post.excerpt,
                     }}
                     itemProp="description"
                   />
@@ -71,7 +80,9 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___post_order], order: DESC }
+    ) {
       nodes {
         excerpt
         fields {
@@ -81,6 +92,9 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          excerpt
+          images
+          tags
         }
       }
     }

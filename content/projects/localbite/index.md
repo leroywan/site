@@ -1,6 +1,8 @@
 ---
 title: Local Bite
+post_order: 100
 date: "2015-05-06T23:46:37.121Z"
+excerpt: "A platform that enables CSA farmers to sell directly to their customers online. The MVP was used with customers of a local farming cooperative."
 blog: "projects"
 subtitle: "web development"
 tagline: "a <mission> to make local food <accessible> to everyone"
