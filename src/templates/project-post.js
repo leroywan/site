@@ -104,12 +104,16 @@ const BlogPostTemplate = ({ data, location }) => {
             }}
           ></div>
         </section>
-        <div className="blog-post global-wrapper">
-          <section
-            dangerouslySetInnerHTML={{ __html: post.html }}
-            itemProp="articleBody"
-          />
-        </div>
+
+        {post.html.trim() !== "" ? (
+          <div className="blog-post global-wrapper">
+            <section
+              dangerouslySetInnerHTML={{ __html: post.html }}
+              itemProp="articleBody"
+            />
+          </div>
+        ) : null}
+
         <hr />
         <footer>
           <Bio />
