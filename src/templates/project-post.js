@@ -127,7 +127,7 @@ const BlogPostTemplate = ({ data, location }) => {
                 to={previous.fields.slug}
                 rel="prev"
               >
-                <p className="project-post-nav__tag">Previous project</p>
+                <p className="project-post-nav__tag">← Previous project</p>
                 <div>{previous.frontmatter.title}</div>
               </Link>
             )}
@@ -139,7 +139,7 @@ const BlogPostTemplate = ({ data, location }) => {
                 to={next.fields.slug}
                 rel="next"
               >
-                <p className="project-post-nav__tag">Next project</p>
+                <p className="project-post-nav__tag">Next project →</p>
                 <div>{next.frontmatter.title}</div>
               </Link>
             )}

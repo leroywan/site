@@ -480,6 +480,7 @@ a {
   display: flex;
   margin: 0;
   border-top: 2px solid black;
+  flex-direction: column;
 }
 
 .project-post-nav__item {
@@ -490,12 +491,11 @@ a {
 
 .project-post-nav__item-left {
   text-align: left;
-  border-right: 1px solid black;
+  border-bottom: 2px solid black;
 }
 
 .project-post-nav__item-right {
   text-align: right;
-  border-left: 1px solid black;
 }
 
 .project-post-nav__tag {
@@ -521,5 +521,18 @@ a {
 
   .overview {
     flex-direction: row;
+  }
+
+  .project-post-nav-list {
+    flex-direction: row;
+  }
+
+  .project-post-nav__item-left {
+    border-bottom: 0px;
+    border-right: 1px solid black;
+  }
+
+  .project-post-nav__item-right {
+    border-left: 1px solid black;
   }
 }
