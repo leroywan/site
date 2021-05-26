@@ -29,6 +29,9 @@ const BlogIndex = ({ data, location }) => {
       <Bio />
       <ol style={{ listStyle: `none` }}>
         {posts.map((post) => {
+          if (post.frontmatter.blog !== "projects") {
+            return null;
+          }
           const title = post.frontmatter.title || post.fields.slug;
           const imageUrl = `url(${post.frontmatter.images[0]})`;
           return (
@@ -100,6 +103,7 @@ export const pageQuery = graphql`
           excerpt
           images
           tags
+          blog
         }
       }
     }

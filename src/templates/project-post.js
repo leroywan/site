@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 
-import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -16,10 +15,10 @@ const BlogPostTemplate = ({ data, location }) => {
     let temp = "";
     for (let i = 0; i < text.length; i++) {
       let char = text[i];
-      if (char == "<") {
+      if (char === "<") {
         parsed.push(temp);
         temp = "";
-      } else if (char == ">") {
+      } else if (char === ">") {
         parsed.push(temp);
         accented.add(temp);
         temp = "";
@@ -27,7 +26,7 @@ const BlogPostTemplate = ({ data, location }) => {
         temp += char;
       }
     }
-    if (temp != "") {
+    if (temp !== "") {
       parsed.push(temp);
     }
     parsed.forEach((text, i) => {
@@ -113,10 +112,6 @@ const BlogPostTemplate = ({ data, location }) => {
             />
           </div>
         ) : null}
-
-        {/* <footer className="project-post-bio">
-          <Bio />
-        </footer> */}
       </article>
       <nav className="project-post-nav">
         <ul className="project-post-nav-list">
