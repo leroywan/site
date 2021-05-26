@@ -120,8 +120,8 @@ const BlogPostTemplate = ({ data, location }) => {
       </article>
       <nav className="project-post-nav">
         <ul className="project-post-nav-list">
-          <li className="project-post-nav__item project-post-nav__item-left">
-            {previous && (
+          {previous && (
+            <li className="project-post-nav__item project-post-nav__item-left">
               <Link
                 className="project-post-nav-link"
                 to={previous.fields.slug}
@@ -130,10 +130,10 @@ const BlogPostTemplate = ({ data, location }) => {
                 <p className="project-post-nav__tag">← Previous project</p>
                 <div>{previous.frontmatter.title}</div>
               </Link>
-            )}
-          </li>
-          <li className="project-post-nav__item project-post-nav__item-right">
-            {next && (
+            </li>
+          )}
+          {next && (
+            <li className="project-post-nav__item project-post-nav__item-right">
               <Link
                 className="project-post-nav-link"
                 to={next.fields.slug}
@@ -142,8 +142,8 @@ const BlogPostTemplate = ({ data, location }) => {
                 <p className="project-post-nav__tag">Next project →</p>
                 <div>{next.frontmatter.title}</div>
               </Link>
-            )}
-          </li>
+            </li>
+          )}
         </ul>
       </nav>
     </Layout>
