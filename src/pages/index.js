@@ -41,10 +41,12 @@ const BlogIndex = ({ data, location }) => {
                 itemScope
                 itemType="http://schema.org/Article"
               >
-                <div
-                  className="post-list-image"
-                  style={{ backgroundImage: imageUrl }}
-                ></div>
+                <Link to={post.fields.slug} itemProp="url">
+                  <div
+                    className="post-list-image"
+                    style={{ backgroundImage: imageUrl }}
+                  ></div>
+                </Link>
                 <header>
                   <h2>
                     <Link to={post.fields.slug} itemProp="url">
