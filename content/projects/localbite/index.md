@@ -26,6 +26,8 @@ The prototypes you see below were all designed and developed within a day. 4 pro
 
 - To test the interest level, I designed a landing page to see how many people would sign up for my Beta program email list. ($60 CAD in Facebook ads for 11 beta user signups). Visit landing page
 
+![localbite__component-library.png](https://leroywan.s3.us-east-2.amazonaws.com/localbite__component-library.png)
+
 ## Development
 - Developed Local Bite’s landing page using Gatsby, a static site generator that is highly optimized for speed. Visit landing page
 
@@ -45,6 +47,8 @@ The prototypes you see below were all designed and developed within a day. 4 pro
 
 - Set up the production environment: an NGINX reverse proxy running inside a container that points to the application port using Docker Compose; an SSL certificate is added to the domain name using Docker volumes
 
+![localbite__isues.png](https://leroywan.s3.us-east-2.amazonaws.com/localbite__issues.png)
+
 ## Conclusion
 
-From my interviews, I discovered that the best way to generate leads with the farming community is through phone or email. I hired 3 virtual assistants and we collected 1500 emails and Facebook pages that we would later contact regarding the launch of our app. Although we only reached out to 100 different farms, we earned 12 new users sign ups along with potential partnerships with various farmers’ markets. You can visit the application through the link below:
+From my interviews, I discovered that the best way to generate leads with the farming community is through phone or email. I hired 3 virtual assistants and we collected 1500 emails and Facebook pages that we would later contact regarding the launch of our app. Although we only reached out to 100 different farms, we earned 12 new users sign ups along with potential partnerships with various farmers’ markets.

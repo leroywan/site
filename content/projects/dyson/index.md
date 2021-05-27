@@ -23,9 +23,17 @@ Dyson reached out to us after noticing a similar project that we have built for 
 
 These questions allowed us to determine our target audience and provides us a general idea of how the site will feel. As with most of our projects, we first start the project by drafting a mockup to visualize the structure of the different pages, image locations, and context of the copy. Doing so allows us and Dyson to align early on in the process to make quick changes and decide on what features are priorities in the site.
 
+![dyson__mockup.png](https://leroywan.s3.us-east-2.amazonaws.com/dyson__mockup.png)
+
 ## Challenge
 The biggest challenge of this build was creating a way to show how each attachment of the product functions together — there really were a lot of attachments, take a look below:
 
+![dyson__attachments.png](https://leroywan.s3.us-east-2.amazonaws.com/dyson__attachments.png)
+
 By taking a look at the attachments alone, one would not be able to figure out how it works. Through a series of trial and errors coding different types of animations, we have concluded that the most elegant, simplistic solution is to present the attachment in a video format. Videos tend to improve user engagement when used sparingly which is a nice plus.
 
+![dyson__gif.gif](https://leroywan.s3.us-east-2.amazonaws.com/dyson__magnetic-attachment.gif)
+
 The only downside of this solution is that videos take up bandwidths of the user’s data plan which is not ideal, especially so when more than 90% of Chinese users surf the web on their mobile phones. Nevertheless, we moved on with the solution by fully optimizing the speed of the site through techniques such as lazy-loading, lazy-sizing, and caching assets using a CDN. The results of the optimizations allowed us to gain excellent speed as determined by Google’s speed tool.
+
+![dyson__speed.png](https://leroywan.s3.us-east-2.amazonaws.com/dyson__speed.png)

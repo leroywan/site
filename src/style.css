@@ -503,10 +503,11 @@ a {
 
 .project-post-nav__item-left {
   text-align: left;
-  border-bottom: 1px solid #cacaca;
+  border-top: 1px solid #cacaca;
 }
 
 .project-post-nav__item-right {
+  border-top: 1px solid #cacaca;
   text-align: right;
 }
 
@@ -528,6 +529,10 @@ a {
   border: 1px solid black;
   margin-right: var(--spacing-2);
   margin-bottom: var(--spacing-2);
+}
+
+.blog-post p img {
+  width: 100%;
 }
 
 @media screen and (min-width: 840px) {
@@ -564,6 +569,7 @@ a {
   }
 
   .project-post-nav__item-right {
+    border-top: 1px solid #cacaca;
     border-left: 1px solid #cacaca;
   }
 }
