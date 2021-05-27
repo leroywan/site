@@ -65,10 +65,14 @@ const BlogPostTemplate = ({ data, location }) => {
                 {parseAccentText(post.frontmatter.tagline)}
               </h2>
               {/* <h1 itemProp="headline">{post.frontmatter.title}</h1> */}
-              <p className="hero-content__tags">
-                {post.frontmatter.tags.join(", ")}
-              </p>
-              <p className="hero-content__date">{post.frontmatter.date}</p>
+              <div className="hero-content__tags">
+                {post.frontmatter.tags.map((tag) => (
+                  <small key={tag} className="hero-content__tag">
+                    {tag}
+                  </small>
+                ))}
+              </div>
+              {/* <p className="hero-content__date">{post.frontmatter.date}</p> */}
             </div>
             <div className="hero-image">
               <div
