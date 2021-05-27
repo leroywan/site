@@ -1,12 +1,12 @@
 ---
 title: Santa's Postal Service
 post_order: 100
-date: "2015-05-06T23:46:37.121Z"
+date: "2018-05-07T23:46:37.121Z"
 excerpt: "I built a seasonal online-store by automating the production of personalized printed letters to handle high order volume as a one-man-show — over 2500 happy children have received their custom letter from Santa Claus last Christmas season."
 blog: "projects"
 subtitle: "web development"
 tagline: "the <magic> of <customization>, and christmas."
-tags: ["Product development", "Design", "Web development", "Facebook Ads", "Shopify"]
+tags: ["Product development", "Design", "Web development", "Facebook marketing"]
 overview_title: ["automating", "<high-volume> orders", "using <in-house>", "<customization> software"]
 overview: "During the winter of 2018, I designed and developed Santa’s Postal Service, an online store that sells fully customizable Christmas letters written, stamped, and wax-sealed by Santa Claus. This project is currently on its third iteration and over 2500 happy children have received their own personal letters from the North Pole. This online store was made possible using various automation software that I had developed to generate digital files of the letter once an order has been placed in the storefront."
 colors: ["#fff2f2", "#fffef8", "#a11d2d"]

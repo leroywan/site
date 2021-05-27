@@ -6,7 +6,7 @@ excerpt: "I built a multi-language micro-site with i18n support as a part of Pan
 blog: "projects"
 subtitle: "web development"
 tagline: "presenting <luxury> to a <new> type of audience"
-tags: ["Design", "Development", "UX", "QA", "Integration"]
+tags: ["Web development", "Design", "i18n", "Wordpress"]
 overview_title: ["a <multi-language>", "<micro-site> built", "for <asian-canadians>"]
 overview: "How do you convince Asian-Canadians to buy a luxury massage chair with a hefty price tag of $10,000 per unit? We were challenged to solve this problem for Panasonic as they were looking to reach a new demographic with the use of a microsite. Through many rounds of research and iterations, we ended up crafting a targeted solution that nearly depleted their entire inventory of expensive massage chairs in stores throughout the major cities in Canada. The multi-language microsite was built in one week with analytic and tracking integrations and allowed Panasonic to successfully monitor the behaviour of their new audience even after the campaign was over."
 colors: ["#eaeaea", "#fff", "#ff1900"]

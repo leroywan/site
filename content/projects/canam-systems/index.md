@@ -6,7 +6,7 @@ excerpt: "I took an ERP application from 2003 written in PHP and re-developed it
 blog: "projects"
 subtitle: "web development"
 tagline: "taking a site from <2003> to <2020>"
-tags: ["Design", "Development", "UX", "QA", "Integration"]
+tags: ["Web development", "Database migration", "Integration"]
 overview_title: ["<rebrand.>", "redesign.", "<development.>"]
 overview: "Canam Systems’ website had not been updated since their first launch in the early 2000’s. I redesigned and developed their new website with a complete rebrand through a collaborative effort with branding agency Paule Design."
 colors: ["#d9f1ff", "#fff1eb", "#1f60ac"]

@@ -6,7 +6,7 @@ excerpt: "A platform that enables CSA farmers to sell directly to their customer
 blog: "projects"
 subtitle: "web development"
 tagline: "a <mission> to make local food <accessible> to everyone"
-tags: ["Design", "Development", "UX", "QA", "Integration"]
+tags: ["Product development", "Software development", "UX/UI", "DevOps"]
 overview_title: ["User Research", "<Prototyping.>", "UI Design.", "<App Development.>", "Deployment."]
 overview: "I designed and developed Local Bite from an idea to a production-grade MVP used with a local farming cooperative. Local Bite is an e-commerce platform and marketplace that enables farmers to sell their produce online and manage order pickups."
 colors: ["#fff7ff", "#fffbf1", "#630762"]

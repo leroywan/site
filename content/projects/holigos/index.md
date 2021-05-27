@@ -6,7 +6,7 @@ excerpt: "I redesigned and developed Holigos®' website to support subscription 
 blog: "projects"
 subtitle: "web development"
 tagline: "<rebuilding> the site of a dietary supplement brand"
-tags: ["Design", "Development", "UX", "QA", "Integration"]
+tags: ["Web development", "Design", "QA", "3rd party integration"]
 overview_title: ["redesign.", "<development.>", "integration."]
 overview: "I collaborated with the marketing team at Capgemini and redesigned/rebuilt the e-commerce store for Holigos®, a dietary supplement that improves gut health. The store is developed to support subscription payments for select products."
 colors: ["#e5fdff", "#fffbec", "#f24538"]
