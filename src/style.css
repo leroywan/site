@@ -396,8 +396,8 @@ a {
 }
 
 .hero-content {
-  padding: 180px var(--spacing-6);
-  flex-basis: 460px;
+  padding: 160px var(--spacing-6);
+  flex-basis: 480px;
 }
 
 .project__subtitle {
@@ -492,7 +492,6 @@ a {
   list-style: none;
   display: flex;
   margin: 0;
-  border-top: 2px solid black;
   flex-direction: column;
 }
 
@@ -504,7 +503,7 @@ a {
 
 .project-post-nav__item-left {
   text-align: left;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid #cacaca;
 }
 
 .project-post-nav__item-right {
@@ -562,10 +561,9 @@ a {
 
   .project-post-nav__item-left {
     border-bottom: 0px;
-    border-right: 1px solid black;
   }
 
   .project-post-nav__item-right {
-    border-left: 1px solid black;
+    border-left: 1px solid #cacaca;
   }
 }
