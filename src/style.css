@@ -276,9 +276,10 @@ a {
 }
 
 .global-wrapper--projects .global-header {
+  width: 100%;
   z-index: 10000;
   padding: var(--spacing-6);
-  position: absolute;
+  position: fixed;
 }
 
 .main-heading {
@@ -533,6 +534,63 @@ a {
 
 .blog-post p img {
   width: 100%;
+}
+
+/* Hamburger */
+.hamburger {
+  z-index: 1000;
+  cursor: pointer;
+  position: fixed;
+  right: var(--spacing-6);
+  top: var(--spacing-6);
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-top,
+.hamburger-mid,
+.hamburger-btm {
+  width: 25px;
+  border-radius: 2px;
+  height: 5px;
+  background-color: #333333;
+  transition: 0.2s transform ease-in-out, 0.2s background-color ease-in-out;
+}
+
+.hamburger--open .hamburger-mid {
+  transform: scaleX(0);
+  background-color: transparent;
+}
+
+.hamburger--open .hamburger-top {
+  transform: translateX(10px) rotate(405deg) translateY(14px);
+}
+
+.hamburger--open .hamburger-btm {
+  transform: translateX(10px) rotate(-45deg) translateY(-14px);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  color: transparent;
+  max-width: 360px;
+  width: 100%;
+  height: 100%;
+  padding: var(--spacing-6);
+  transition: 0.2s transform ease-in-out, 0.2s background-color ease-in-out,
+    0.2s color ease-in-out;
+  transform: translate(100%, 0%);
+}
+
+.menu.menu--open {
+  background-color: white;
+  transform: translate(0%, 0%);
+  color: var(--color-text);
 }
 
 @media screen and (min-width: 840px) {

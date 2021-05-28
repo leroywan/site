@@ -12,6 +12,7 @@ const Layout = ({
 }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location.pathname === rootPath;
+  const [menuOpen, setMenuOpen] = React.useState(false);
   let header;
 
   if (isRootPath) {
@@ -22,9 +23,24 @@ const Layout = ({
     );
   } else {
     header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
+      <>
+        <Link className="header-link-home" to="/">
+          {title}
+        </Link>
+        {/* <div className={`menu ${menuOpen ? " menu--open" : null}`}>
+          <p>Home</p>
+        </div>
+        <div
+          className={`hamburger${menuOpen ? " hamburger--open" : ""}`}
+          onClick={() => {
+            setMenuOpen(!menuOpen);
+          }}
+        >
+          <div className="hamburger-top"></div>
+          <div className="hamburger-mid"></div>
+          <div className="hamburger-btm"></div>
+        </div> */}
+      </>
     );
   }
 

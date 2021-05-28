@@ -38,7 +38,6 @@ const BlogPostTemplate = ({ data, location }) => {
   }
   const image1 = `url(${post.frontmatter.images[0]})`;
   const image2 = `url(${post.frontmatter.images[1]})`;
-
   return (
     <Layout
       location={location}
@@ -47,6 +46,8 @@ const BlogPostTemplate = ({ data, location }) => {
       themeColor1={post.frontmatter.colors[0]}
       themeColor2={post.frontmatter.colors[1]}
       themeAccent={post.frontmatter.colors[2]}
+      prevPost={previous}
+      nextPost={next}
     >
       <SEO
         title={post.frontmatter.title}
