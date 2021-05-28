@@ -48,8 +48,8 @@ const Bio = () => {
         />
       )}
       {author?.name && (
-        <p>
-          built by <strong>{author.name}</strong>.<br></br>
+        <p style={{ lineHeight: "1.4rem" }}>
+          <strong>{author.name}</strong>.<br></br>
           <span>
             <i>{author?.summary || null}</i>
           </span>
