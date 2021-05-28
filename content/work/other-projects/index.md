@@ -1,8 +1,8 @@
 ---
-title: Crafter Studio
-post_order: 1
+title: Other Projects
+post_order: 10
 date: "2020-05-06T23:46:37.121Z"
-excerpt: "My freelance software development career operates under the name Crafter Studio. Feel free to click in to take a peak at some of my other projects!"
+excerpt: "Some projects I have worked on over the years. Click in to take a peak at some of my them!"
 blog: "projects"
 subtitle: "web development"
 tagline: "bringing <cool ideas> to <life.>"
@@ -22,6 +22,11 @@ A product page made for Muvez, a Shark-Tank backed venture that sells shoes with
 A Drupal-based website for the Department of Health And Safety at Queen’s University.
 
 ![queens](https://leroywan.s3.us-east-2.amazonaws.com/queens__site.png)
+
+## Crafter Studio
+Crafter Studio is the name of my freelance web-development business. I often times collaborate with other freelancers and agencies to work with larger clients. Feel free to checkout the website!
+
+[View project](https://crafterstu.com/)
 
 ## Ekipo.io
 Ekipo.io is a Slack app that helps remote companies build a better work culture through recognition and gamification. After creating 3 different landing pages and interviewing various founders of remote companies (~16 employees), I created a prototype that I tested with an agency for 2 weeks — I decided not to continue with this project after discovering that Ekipo.io is not well-suited for most remote companies. [View project](https://ekipo.netlify.app/)

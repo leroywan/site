@@ -6,14 +6,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blog-post.js`);
-  // Define a template for projects
-  const projectPost = path.resolve(`./src/templates/project-post.js`);
+  // Define a template for work
+  const workPost = path.resolve(`./src/templates/work-post.js`);
 
   // Get all markdown blog posts sorted by date
-  const result = await graphql(
+  const workResult = await graphql(
     `
       {
         allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/work/" } }
           sort: { fields: [frontmatter___date], order: ASC }
           limit: 1000
         ) {
@@ -22,38 +23,35 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             fields {
               slug
             }
-            frontmatter {
-              blog
-            }
           }
         }
       }
     `
   );
 
-  if (result.errors) {
+  if (workResult.errors) {
     reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
-      result.errors
+      `There was an error loading your work posts`,
+      workResult.errors
     );
     return;
   }
 
-  const posts = result.data.allMarkdownRemark.nodes;
+  const workPosts = workResult.data.allMarkdownRemark.nodes;
 
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
 
-  if (posts.length > 0) {
-    posts.forEach((post, index) => {
-      const previousPostId = index === 0 ? null : posts[index - 1].id;
+  if (workPosts.length > 0) {
+    workPosts.forEach((post, index) => {
+      const previousPostId = index === 0 ? null : workPosts[index - 1].id;
       const nextPostId =
-        index === posts.length - 1 ? null : posts[index + 1].id;
+        index === workPosts.length - 1 ? null : workPosts[index + 1].id;
 
       createPage({
         path: post.fields.slug,
-        component: post.frontmatter.blog == "projects" ? projectPost : blogPost,
+        component: workPost,
         context: {
           id: post.id,
           previousPostId,
@@ -73,7 +71,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value: `/work${value}`,
     });
   }
 };
