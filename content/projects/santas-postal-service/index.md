@@ -15,10 +15,12 @@ images: ["https://leroywan.s3.us-east-2.amazonaws.com/santa__screen.png", "https
 ---
 
 # The story
-Santa's Postal Service is a seasonal store that sends beautifully crafted, authentic, Christmas letters from Santa Claus to children all over North America. This project started out as an MVP and through multiple rounds of iteration resulted in a conversion rate of 8.6% and over 2000 orders during the Christmas season. 
+Santa's Postal Service is a seasonal store that sends beautifully crafted, authentic, Christmas letters from Santa Claus to children all over North America. This project started out as an MVP and through multiple rounds of iteration resulted in a conversion rate of 8.6% and over 2000 orders during the Christmas season. To match the the high volume of orders as a one-man-show, I developed a piece of software that queries orders from my online store to automate artwork generation which then later gets printed and sent out.
 
 ## Design
 Santa’s Postal Service is a seasonal store, so naturally, the branding of the company will be jolly and festive, with lots of illustrations that match the theme of Christmas. The main focus of the store was authenticity ⁠— that we are actually Santa Claus from the North Pole, not the one sitting around in shopping malls. The idea of authenticity is critical. To create the feeling of realness, I manufactured the letterhead & envelope using a linen paper stock, foil-stamped with silver & gold, and wax-sealed using Santa’s signature S. 
+
+![santa-version.png](https://leroywan.s3.us-east-2.amazonaws.com/santa__assets.png)
 
 ## Failed attempt #1 — Too complicated
 The first version of Santa’s Postal Service was a failure. I assumed that customers wanted to customize their own Christmas letters — which cannot be further from the truth. People want a customized letter, but they do not want to spend the time to fully customize their own. In fact, only a 5% of customers chose to customize their own letters. Designing an experience around customizability resulted in unnecessary confusion and many Facebook comments about how difficult it was to create a letter.

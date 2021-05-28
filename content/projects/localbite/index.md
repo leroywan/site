@@ -12,8 +12,13 @@ overview: "I designed and developed Local Bite from an idea to a production-grad
 colors: ["#fff7ff", "#fffbf1", "#630762"]
 images: ["https://leroywan.s3.us-east-2.amazonaws.com/localbite__banner.png", "https://leroywan.s3.us-east-2.amazonaws.com/localbite__banner.png"]
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3NUnx1LCYJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## User Research & Rapid Prototyping
-The prototypes you see below were all designed and developed within a day. 4 prototypes were created in total and tested with users during 5 different a 1-hour study to validate any assumptions that were made. The learnings made from the 20 different studies were compiled to develop the first version of Local Bite.
+4 prototypes were created in total and tested with users during 5 different a 1-hour study to validate any assumptions that were made. The learnings made from the 20 different studies were compiled to develop the first version of Local Bite.
+
+[Link to the interactive prototype](https://localbite.invisionapp.com/console/share/941K53M8Y3)
 
 ## Design
 - I researched the pain points of our local farmers, created a business case, and formulated a long-term strategy to achieve Local Bite’s long term goals and mission. Read More
