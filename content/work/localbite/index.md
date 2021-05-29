@@ -16,20 +16,20 @@ images: ["https://leroywan.s3.us-east-2.amazonaws.com/localbite__banner.png", "h
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3NUnx1LCYJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## User Research & Rapid Prototyping
-4 prototypes were created in total and tested with users during 5 different a 1-hour study to validate any assumptions that were made. The learnings made from the 20 different studies were compiled to develop the first version of Local Bite.
+4 prototypes were created in total and tested with users during 5 different a 1-hour studies to validate any assumptions that were made. The learnings made from the 20 different studies were compiled to develop the first version of Local Bite.
 
 [Link to the interactive prototype](https://localbite.invisionapp.com/console/share/941K53M8Y3)
 
 ## Design
-- I researched the pain points of our local farmers, created a business case, and formulated a long-term strategy to achieve Local Bite’s long term goals and mission. Read More
+- I researched the pain points of our local farmers, created a business case, and formulated a long-term strategy to achieve Local Bite’s long term goals and mission.
 
 - Using Sketch, I built a design system with components (called Symbols in Sketch) that behave and look consistent throughout the entire application. The design system includes colour palettes, typography, and various styles for different application states. 
 
 - Using Illustrator, Photoshop, and Sketch, I created 4 prototype designs throughout the course of 1 month. 
 
-- I tested 4 uniquely different interactive prototypes with specific groups of users and used InVision to map out the application flow. Each prototype was tested throughout 5 different 1-hour long interviews to answer specific questions, validate our assumptions, and gauge user interest. A total of 20 users were interviewed and the learnings were applied to our MVP.
+- I tested 4 uniquely different interactive prototypes with specific groups of users and used [InVision]((https://localbite.invisionapp.com/console/share/941K53M8Y3)) to map out the application flow. Each prototype was tested throughout 5 different 1-hour long interviews to answer specific questions, validate our assumptions, and gauge user interest. A total of 20 users were interviewed and the learnings were applied to our MVP.
 
-- To test the interest level, I designed a landing page to see how many people would sign up for my Beta program email list. ($60 CAD in Facebook ads for 11 beta user signups). Visit landing page
+- To test the interest level, I designed a landing page to see how many people would sign up for my Beta program email list. ($60 CAD in Facebook ads for 11 beta user signups).
 
 ![localbite__component-library.png](https://leroywan.s3.us-east-2.amazonaws.com/localbite__component-library.png)
 
