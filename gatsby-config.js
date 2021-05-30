@@ -5,10 +5,10 @@ module.exports = {
       name: `leroy wan`,
       summary: `developer & web designer.`,
     },
-    description: `The description of this site`,
+    description: `I am a web developer/designer and I like to build things.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
     social: {
-      twitter: `alksjdjf`,
+      twitter: `none`,
     },
   },
   plugins: [
