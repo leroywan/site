@@ -111,7 +111,7 @@ const BlogPostTemplate = ({ data, location }) => {
               </h2>
             </div>
             <div className="overview__body">
-              <Fade cascade bottom duration={750} distance="5px">
+              <Fade bottom duration={750} distance="5px">
                 <p className="project__p">{post.frontmatter.overview}</p>
               </Fade>
             </div>
