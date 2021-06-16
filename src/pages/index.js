@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
+import Fade from "react-reveal/Fade";
 
 import Bio from "../components/bio";
 import Layout from "../components/layout";
@@ -29,7 +30,6 @@ const BlogIndex = ({ data, location }) => {
         title="Leroy's Projects."
         description="I am a web developer/designer and I love building things. Click in to take a peek at some of my projects!"
       />
-      <Bio />
       <ol style={{ listStyle: `none` }}>
         {posts.map((post) => {
           if (post.frontmatter.blog !== "projects") {
@@ -45,35 +45,45 @@ const BlogIndex = ({ data, location }) => {
                 itemType="http://schema.org/Article"
               >
                 <Link to={post.fields.slug} itemProp="url">
-                  <div
-                    className="post-list-image"
-                    style={{ backgroundImage: imageUrl }}
-                  ></div>
+                  <Fade bottom duration={800} distance="15px">
+                    <div
+                      className="post-list-image"
+                      style={{ backgroundImage: imageUrl }}
+                    ></div>
+                  </Fade>
                 </Link>
                 <header>
                   <h2>
                     <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
+                      <span itemProp="headline">
+                        <Fade cascade bottom duration={600} distance="10px">
+                          {title}
+                        </Fade>
+                      </span>
                     </Link>
                   </h2>
-                  {post.frontmatter.tags.map((item, i) => (
-                    <small className="project-tags" key={`${i}-${item}`}>
-                      {item}
-                    </small>
-                  ))}
+                  <Fade bottom duration={600} distance="10px">
+                    {post.frontmatter.tags.map((item, i) => (
+                      <small className="project-tags" key={`${i}-${item}`}>
+                        {item}
+                      </small>
+                    ))}
+                  </Fade>
                 </header>
                 <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.excerpt || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                  <div style={{ textAlign: "right" }}>
-                    <Link to={post.fields.slug}>
-                      <small>continue reading →</small>
-                    </Link>
-                  </div>
+                  <Fade bottom duration={600} distance="10px">
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: post.frontmatter.excerpt || post.excerpt,
+                      }}
+                      itemProp="description"
+                    />
+                    <div style={{ textAlign: "right" }}>
+                      <Link to={post.fields.slug}>
+                        <small>continue reading →</small>
+                      </Link>
+                    </div>
+                  </Fade>
                 </section>
               </article>
             </li>
