@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
+import Fade from "react-reveal/Fade";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -31,7 +32,11 @@ const BlogPostTemplate = ({ data, location }) => {
     }
     parsed.forEach((text, i) => {
       if (accented.has(text)) {
-        parsed[i] = <span className="text--accented">{text}</span>;
+        parsed[i] = (
+          <Fade key={text + i} duration={400 * (i + 1)}>
+            <span className="text--accented">{text}</span>
+          </Fade>
+        );
       }
     });
     return parsed;
@@ -61,52 +66,66 @@ const BlogPostTemplate = ({ data, location }) => {
         <header className="hero-container">
           <div className="hero">
             <div className="hero-content">
-              <p className="project__subtitle">{post.frontmatter.title}</p>
-              <h2 className="project__tagline">
-                {parseAccentText(post.frontmatter.tagline)}
-              </h2>
+              <Fade cascade bottom duration={750} distance="5px">
+                <p className="project__subtitle">{post.frontmatter.title}</p>
+              </Fade>
+              <Fade duration={400}>
+                <h2 className="project__tagline">
+                  {parseAccentText(post.frontmatter.tagline)}
+                </h2>
+              </Fade>
               {/* <h1 itemProp="headline">{post.frontmatter.title}</h1> */}
-              <div className="hero-content__tags">
-                {post.frontmatter.tags.map((tag) => (
-                  <small key={tag} className="hero-content__tag">
-                    {tag}
-                  </small>
-                ))}
-              </div>
+              <Fade cascade delay={500} duration={800} distance="5px">
+                <div className="hero-content__tags">
+                  {post.frontmatter.tags.map((tag) => (
+                    <small key={tag} className="hero-content__tag">
+                      {tag}
+                    </small>
+                  ))}
+                </div>
+              </Fade>
               {/* <p className="hero-content__date">{post.frontmatter.date}</p> */}
             </div>
             <div className="hero-image">
-              <div
-                className="hero-image-bg splash-image"
-                style={{
-                  backgroundImage: image1,
-                }}
-              ></div>
+              <Fade duration={300}>
+                <div
+                  className="hero-image-bg splash-image"
+                  style={{
+                    backgroundImage: image1,
+                  }}
+                ></div>
+              </Fade>
             </div>
           </div>
         </header>
         <section className="overview-wrapper">
           <div className="overview">
             <div className="overview__heading">
-              <p className="project__subtitle">Overview</p>
+              <Fade cascade bottom duration={750} distance="5px">
+                <p className="project__subtitle">Overview</p>
+              </Fade>
               <h2 className="project__tagline">
                 {post.frontmatter.overview_title.map((line) => (
-                  <div>{parseAccentText(line)}</div>
+                  <div key={line}>{parseAccentText(line)}</div>
                 ))}
               </h2>
             </div>
             <div className="overview__body">
-              <p className="project__p">{post.frontmatter.overview}</p>
+              <Fade cascade bottom duration={750} distance="5px">
+                <p className="project__p">{post.frontmatter.overview}</p>
+              </Fade>
             </div>
           </div>
         </section>
         <section className="splash-image-wrapper">
-          <div
-            className="splash-image"
-            style={{
-              backgroundImage: image2,
-            }}
-          ></div>
+          <Fade duration={500}>
+            <div
+              className="splash-image"
+              style={{
+                backgroundImage: image2,
+              }}
+            ></div>
+          </Fade>
         </section>
 
         {post.html.trim() !== "" ? (
