@@ -34,7 +34,7 @@ images: ["https://leroywan.s3.us-east-2.amazonaws.com/localbite__banner.png", "h
 ![localbite__component-library.png](https://leroywan.s3.us-east-2.amazonaws.com/localbite__component-library.png)
 
 ## Development
-- Developed Local Bite’s landing page using Gatsby, a static site generator that is highly optimized for speed. Visit landing page
+- Developed Local Bite’s landing page using Gatsby, a static site generator that is highly optimized for speed. [Visit landing page](https://localbitecsa.netlify.app/)
 
 - Configured Webpack to bundle both server and client with support for SASS, CSS Modules, Typescript, Babel transpiler, hot module reloading, dev & production environment builds, and prerendering
 
